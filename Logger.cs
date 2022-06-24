@@ -27,10 +27,13 @@ namespace Append
             for (int i = 0; i < _messages.Count; i++)
             {
                 Console.WriteLine(_messages[i]);
-                Console.WriteLine(Environment.NewLine);
             }
 
             Console.ForegroundColor = _cColor;
+        }
+        public static void LineBreak()
+        {
+            Console.WriteLine(Environment.NewLine);
         }
     }
 }
