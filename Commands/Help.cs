@@ -34,13 +34,7 @@ namespace Append.Commands
             return $"Name: {Name} | Desc: {Description}";
         }
     }
-    public class help : Help
-    {
-        public help()
-        {
-            this.Name = "help";
-        }
-    }
+
 }
 
 

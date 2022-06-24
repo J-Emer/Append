@@ -33,7 +33,7 @@ namespace Append
 
             string _commandName = GetCommandName(args);
             
-            ICommand _command = this._commands.Where(x => x.Name == _commandName).FirstOrDefault();
+            ICommand _command = this._commands.Where(x => x.Name.ToLower() == _commandName.ToLower()).FirstOrDefault();
             if(_command == null)
             {
                 Logger.Log($"ERROR: Command {_commandName} NOT found", Varbosity.High);
